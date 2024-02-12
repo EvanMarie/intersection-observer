@@ -20,6 +20,7 @@ export default function NavBar() {
           borderRadius: "0 3vh 3vh 0",
           display: "flex",
           justifyContent: "center",
+          
         }}
       >
         {children}
