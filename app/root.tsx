@@ -9,8 +9,10 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import NavBar from "./components/navBar";
+import cssStyles from "./style.css";
 
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: cssStyles },
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
@@ -23,7 +25,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body style={{ padding: 0, margin: 0, background: "#444" }}>
+      <body>
         <NavBar />
         <Outlet />
         <ScrollRestoration />

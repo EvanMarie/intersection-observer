@@ -15,9 +15,11 @@ export default function NavBar() {
           background: "white",
           width: "6vh",
           height: "fit-content",
-          padding: "2vh 2vh 2vh 0.7vh",
+          padding: "1.3vh 1.3vh 1.3vh 1vh",
           boxShadow: "1px 1px 12px 1px #000",
           borderRadius: "0 3vh 3vh 0",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
         {children}
@@ -39,8 +41,9 @@ export default function NavBar() {
         width: "6vh",
       }}
     >
-      <NavBarLink to="/">Home</NavBarLink>
-      <NavBarLink to="/boxes">Boxes</NavBarLink>
+      <NavBarLink to="/">home</NavBarLink>
+      <NavBarLink to="/boxes">boxes</NavBarLink>
+      <NavBarLink to="/images">images</NavBarLink>
     </div>
   );
 }
